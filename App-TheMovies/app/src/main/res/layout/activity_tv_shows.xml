@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+   >
+
+
+    <ImageView
+
+        android:id="@+id/iv_background_shows"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_back_detail_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <ImageView
+            android:id="@+id/img_favorite_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:src="@drawable/ic_favorite_border_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/space_large"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_title_show_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giang"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_genres_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GIang"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_round_primary_background"
+        app:behavior_peekHeight="100dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/id_scroll_show"
+                android:layout_width="45dp"
+                android:layout_height="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space_medium"
+            android:background="@drawable/custom_nav" />
+
+            <TextView
+                android:id="@+id/tv_raiting_Star_show"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_scroll_show"
+
+                android:gravity="center"
+                android:text="8.5"
+                android:textColor="@color/color_text_default"
+                android:textSize="24sp" />
+
+            <RatingBar
+                android:id="@+id/rb_star_show"
+                style="?attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_raiting_Star_show"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:numStars="5"
+                android:rating="4.25"
+                android:stepSize="1" />
+
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/tv_time_tv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_scroll_show"
+                android:layout_marginTop="@dimen/space_large"
+
+                android:gravity="center"
+                android:text="133m"
+                android:textColor="@color/color_text_default"
+                android:textSize="24sp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_scroll_show"
+                android:id="@+id/tv_run_time"
+                android:text="Run time"
+                android:textColor="@color/color_text_default" />
+            <TextView
+                android:id="@+id/tv_release_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Release Date"
+                android:textSize="20sp"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="@dimen/space_medium"
+                android:textColor="@color/color_text_default"
+                android:layout_below="@id/tv_raiting_Star_show"/>
+            <TextView
+                android:id="@+id/tv_date_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_release_date"
+
+                android:text="2019-05-30"
+                android:textColor="@color/color_text_default"
+                android:layout_marginStart="@dimen/space_medium"
+                android:textAlignment="textStart"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tv_date_show"
+                android:id="@+id/tv_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:textSize="20sp"
+                android:textColor="@color/color_text_default"
+                android:layout_marginStart="@dimen/space_medium"/>
+            <TextView
+                android:text="hadhakhf cnsalkvnls"
+                android:layout_marginStart="@dimen/space_medium"
+                android:id="@+id/tv_set_overview_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_default"
+                android:textAlignment="textStart"
+                android:layout_below="@id/tv_overview"/>
+            <TextView
+                android:text="Revenue"
+                android:layout_marginStart="@dimen/space_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/tv_set_overview_show"
+                android:id="@+id/tv_revenue"
+                android:textSize="20sp"
+                android:textColor="@color/color_text_default"/>
+            <TextView
+                android:id="@+id/tv_set_revenue"
+                android:layout_marginStart="@dimen/space_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_revenue"
+                android:text="$124.18745"
+                android:textColor="@color/color_text_default"
+                android:textAlignment="textStart"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/space_medium"
+                android:text="Production companies"
+                android:textSize="20sp"
+                android:textColor="@color/color_text_default"
+                android:layout_below="@id/tv_set_revenue"
+                android:id="@+id/tv_production"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_set_production_show"
+                android:layout_below="@id/tv_production"
+                android:layout_marginStart="@dimen/space_medium"
+                android:text="jkahsfj"
+                android:textColor="@color/color_text_default"
+                android:textAlignment="textStart"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/space_medium"
+                android:layout_below="@id/tv_set_production_show"
+                android:id="@+id/tv_countries"
+                android:text="Production countries"
+                android:textSize="20sp"
+                android:textColor="@color/color_text_default"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_medium"
+                android:layout_below="@id/tv_countries"
+                android:text="Viet Nam"
+                android:textColor="@color/color_text_default"
+                android:textAlignment="textStart"
+                android:id="@+id/tv_set_countries_show"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
